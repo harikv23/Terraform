@@ -24,7 +24,7 @@ try {
         dir("./np_account/ap-south-1/dev_vpc/c2o/ec2/") {
             sh "pwd"
             sh "ls -ltra"
-            sh '/usr/local/bin/terraform init'
+            sh '/usr/local/bin/Terraform/terraform init'
         }
         }
       }
@@ -44,7 +44,7 @@ try {
         dir("./np_account/ap-south-1/dev_vpc/c2o/ec2/") {
             sh "pwd"
             sh "ls -ltra"
-            sh '/usr/local/bin/terraform plan'
+            sh '/usr/local/bin/Terraform/terraform plan'
         }
 
         }
@@ -69,7 +69,7 @@ try {
         dir("./np_account/ap-south-1/dev_vpc/c2o/ec2/") {
             sh "pwd"
             sh "ls -ltra"
-            sh '/usr/local/bin/terraform apply -auto-approve'
+            sh '/usr/local/bin/Terraform/terraform apply -auto-approve'
         }
         }
       }
@@ -89,7 +89,7 @@ try {
           dir("./np_account/ap-south-1/dev_vpc/c2o/ec2/") {
               sh "pwd"
               sh "ls -ltra"
-              sh '/usr/local/bin/terraform show'
+              sh '/usr/local/bin/Terraform/terraform show'
           }
 
           }
