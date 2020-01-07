@@ -57,7 +57,7 @@ try {
 
     
     // Run terraform apply ------------------------------------------------
-  stage('destroy') {
+  stage('apply') {
     node {
 
       withCredentials([[
@@ -70,7 +70,7 @@ try {
         dir("./np_account/ap-south-1/dev_vpc/c2o/ec2/") {
             sh "pwd"
             sh "ls -ltra"
-            sh '/usr/local/bin/Terraform/terraform destroy -auto-approve'
+            sh '/usr/local/bin/Terraform/terraform apply -auto-approve'
         }
         }
       }
