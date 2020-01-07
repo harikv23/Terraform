@@ -1,6 +1,7 @@
-//add comment  //
+//add comment
 // Jenkinsfile
 String credentialsId = 'awsCredentials'
+
 
 try {
   stage('checkout') {
