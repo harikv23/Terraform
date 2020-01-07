@@ -5,7 +5,7 @@ resource "aws_instance" "web" {
   #subnet_id     = "${var.subnet_id}"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "MyApp1"
   }
 }
 
@@ -21,9 +21,3 @@ resource "aws_db_instance" "default" {
   parameter_group_name = "${var.parameter_group_name}"
 }
 
-output db_user_password {
- value = "${var.password}"
-}
-output db_user_name {
- value = "${var.username}"
-}
