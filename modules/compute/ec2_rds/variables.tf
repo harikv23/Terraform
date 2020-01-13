@@ -14,6 +14,11 @@ variable subnet_id {
  default = "subnet-0285ae6a"
  }
 
+variable key_name {
+default = "my_new_ec2_keypair"
+ }
+
+
 ############# MY SQL DB INSTANCE CREATION  ####
 
 
