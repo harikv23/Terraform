@@ -10,6 +10,11 @@ default = "t2.micro"
 }
 variable subnet_id {}
 
+variable key_name {
+default = "my_new_ec2_keypair"
+ }
+
+
 ############# MY SQL DB INSTANCE CREATION  ####
 
 
