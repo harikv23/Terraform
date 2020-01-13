@@ -3,12 +3,16 @@
 variable ec2_count {
 default = "1"
 }
-variable ami_id {}
+variable ami_id {
+ default = "ami-5a8da735"
+ }
 
 variable instance_type {
 default = "t2.micro"
 }
-variable subnet_id {}
+variable subnet_id {
+ default = "subnet-0285ae6a"
+ }
 
 ############# MY SQL DB INSTANCE CREATION  ####
 
